@@ -1,0 +1,41 @@
+# macOS
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# MLflow runtime data (DB + artifact store — too large, machine-specific)
+mlruns.db
+mlruns/
+logs.log
+ML_Part/logs.log
+
+# Trained model binaries (often hundreds of MB)
+*.pkl
+*.pt
+*.pth
+DL_Part/saved_models/
+
+# Large data / output artefacts
+DL_Part/gradcam_results/
+DL_Part/*.png
+DL_Part/*.csv
+DL_Part/smaple_data/output/Mlopsoutput.numbers
+
+# Misc
+*.log
+*.egg-info/
+dist/
+build/

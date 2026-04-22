@@ -1,0 +1,31 @@
+# BLAST MLOps UI — full dependency list
+# Install into your BLAST conda environment:
+#   conda activate <your_env>
+#   pip install -r requirements_ui.txt
+
+# ── Streamlit & web ───────────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── MLflow ────────────────────────────────────────────────────────────────────
+mlflow>=2.12.0
+
+# ── Data handling ─────────────────────────────────────────────────────────────
+pandas>=2.1.0
+openpyxl>=3.1.0        # required by pandas to read .xlsx files
+numpy>=1.24.0
+
+# ── Visualisation ─────────────────────────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.13.0
+Pillow>=10.0.0
+opencv-python-headless>=4.8.0   # GradCAM heatmap overlay (no GUI deps)
+
+# ── Deep Learning ─────────────────────────────────────────────────────────────
+torch>=2.0.0
+torchvision>=0.15.0
+
+# ── Machine Learning (AutoML) ─────────────────────────────────────────────────
+pycaret>=3.2.0
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+lightgbm>=4.0.0
